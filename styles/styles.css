@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+ "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Aca empiezan los estilos del header */
+header {
+  background-color: yellowgreen;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+  background-color: rebeccapurple;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+header nav ul li {
+  background-color: seagreen;
+  padding: 10px;
+}
+
+/* Aca empiezan los estilos del main */
+#container {
+  /* min-height: 100vh; */
+  background-color: violet;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.item-grid {
+  width: 220px;
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.item-grid img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Aca empiezan los estilos del footer */
+footer {
+  background-color: teal;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.lista-uno li {
+  background-color: turquoise;
+  margin: 10px;
+  padding: 10px;
+}
+
+.lista-dos li {
+  background-color: slateblue;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Aca empiezan los media querie */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    background-color: chartreuse;
+  }
+
+  main {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: crimson;
+  }
+}
