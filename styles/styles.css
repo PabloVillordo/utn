@@ -5,19 +5,26 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
+body{
+  /* background-color: white; */
+  background-image: ("");
+}
 /* Aca empiezan los estilos del header */
 header {
-  background-color: yellowgreen;
-  padding: 30px;
+  width: 100%;
+  background-color: rgb(142, 189, 50);
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  
 }
 
 header img {
   width: 150px;
-  background-color: rebeccapurple;
+  background-color:  rgb(34, 13, 218);
+  border-radius: 10px
 }
 
 header ul {
@@ -27,24 +34,27 @@ header ul {
 }
 
 header nav ul li {
-  background-color: seagreen;
+  background-color: rgb(13, 218, 64);
   padding: 10px;
+  
 }
 
 /* Aca empiezan los estilos del main */
 #container {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   background-color: violet;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-top: 100px;
   padding: 20px;
+  top: 200px;
 }
-
+/* tarjetas */
 .item-grid {
   width: 220px;
-  background-color: yellow;
+  background-color: rgba(54, 70, 212, 0.3);
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -95,6 +105,6 @@ footer ul {
   }
 
   footer {
-    background-color: crimson;
+    background-color: rgb(36, 109, 52);
   }
 }
