@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,43 +9,80 @@
     <!---link arch css-->
     <link rel="stylesheet" href="styles/styles.css">
     <!---link icon-->
-     <link rel="shortcut icon" href="img/icon/flavicon.png">
-  <!-- Font-Family utilizada -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
+    <link rel="shortcut icon" href="img/icon/flavicon.png">
+
 </head>
 
 <body>
-    <!-- Aquí comienza el header-->  
+    <!-- Aquí comienza el header-->
     <header>
-        <img src="https://rickandmorty-finalproject-mairaledesma.vercel.app/img/rickandmorty-image.png"
-            alt="imagen de rick and morty" />
         <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Proyectos</li>
-                <li>Contacto</li>
-            </ul>
+            <div class="banner" id="banner">
+                <img src="https://hbomax-images.warnermediacdn.com/2022-08/tt.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com"
+                    alt="imagen de rick and morty" />
+            </div>
+
+
+
+            <div class="buttons">
+                <ul class="li-buttons">
+                    <li><a href="#caracteres">Caracteres</a></li>
+                    <li><a href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ">Watch</a>
+                    </li>
+                    <li><a href="#container-footer">Contact</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
+
     </main>
-    <h2>¡Hola, soy el nuevo titulo de la página, vengo del commit 2!</h2>
-    <div id="container"></div>
+    <section>
+        <div id="container">
+            <div class="top">
+
+            </div>
+
+            <div class="sinopsis" id="caracteres">
+                <h2>Sinopsis:</h2>
+                <p>"Rick y Morty" es una popular serie de televisión de animación para adultos que sigue las aventuras
+                    de un genio científico alcohólico llamado Rick y su ingenuo nieto adolescente Morty.</p>
+                <p>Rick es un personaje excéntrico que tiene acceso a tecnologías avanzadas que le permiten viajar a
+                    través de diferentes universos y dimensiones. A menudo, arrastra a Morty, su compañero de viaje más
+                    frecuente, en aventuras peligrosas y alocadas en diferentes partes del multiverso.</p>
+                <p>Mientras viajan, los personajes enfrentan a seres extraterrestres, robots asesinos, personajes de
+                    otras dimensiones, y otras criaturas igualmente extrañas y peligrosas. Además, la serie aborda temas
+                    más complejos, como la familia disfuncional, la mortalidad, la depresión y la ansiedad, todo ello
+                    presentado con humor ácido y oscuro.</p>
+                <p>En resumen, "Rick y Morty" es una mezcla única de comedia, ciencia ficción y drama que ha ganado una
+                    gran cantidad de seguidores por su originalidad, creatividad y su estilo único de animación.</p>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+
+    </section>
+
     </main>
-    
+
     <footer>
-        <ul class="lista-uno">
-            <li>Inicio</li>
-            <li>Proyectos</li>
-            <li>Contacto</li>
-        </ul>
-        <ul class="lista-dos">
-            <li>Facebook</li>
-            <li>Instagram</li>
-        </ul>
+        <div class="container-footer" id="container-footer">
+        </div>
+        <div class="lista-1">
+
+            <ul class="lista-uno">
+                <li><a href="https://www.linkedin.com/in/pablo-villordo/">Perfil en Linkedin</a> </li>
+                <li><a href="https://github.com/PabloVillordo/">Perfil en GuitHub</a></li>
+            </ul>
+        </div>
+
     </footer>
+
     <script src="app/app.js"></script>
 </body>
 

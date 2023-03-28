@@ -3,33 +3,36 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
- "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-body{
-  background-color:  rgb(232,154,199);
+
+body {
+  background-color: rgb(232, 154, 199);
   /* background-image: (""); */
 }
+
 /* Aca empiezan los estilos del header */
 header {
   width: 100%;
   height: auto;
-  background-color: rgb(232,154,199);
+  background-color: rgb(232, 154, 199);
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
 
-  /* overflow: hidden; */
-  
+
 }
+
 /* imagen del header */
 header img {
-  width: 150px;
-  background-color:  rgb(151,206,76, 0.3);
-  border-radius: 10px
-  
-  
+  display: flex;
+  width: 50%;
+  background-color: rgb(151, 206, 76, 0.3);
+  border-radius: 10px justify-content: center;
+
+
 }
 
 header ul {
@@ -37,19 +40,40 @@ header ul {
   display: flex;
   gap: 10px;
 }
+
 /* botones del header */
-header nav ul li {
-  background-color: rgb(151,206,76,0.3);
-  padding: 10px;
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 154, 199);
+  width: 100%;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   border-radius: 10px;
-  
+  padding: 20px;
+  background-color: rgb(232, 154, 199);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(232, 154, 199);
 }
 
 /* Aca empiezan los estilos del main */
 #container {
-  top: auto;
+  /* top: auto; */
   min-height: 100vh;
-  background-color: rgb(232,154,199);
+  background-color: rgb(232, 154, 199);
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -59,6 +83,23 @@ header nav ul li {
   top: 200px;
   overflow: hidden;
 }
+
+.top {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(232, 154, 199);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sinopsis {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: rgb(232, 154, 199);
+}
+
+
 /* tarjetas */
 .item-grid {
   width: 220px;
@@ -75,37 +116,43 @@ header nav ul li {
 
 /* Aca empiezan los estilos del footer */
 footer {
-  background-color: rgb(232,154,199);
+  background-color: rgb(232, 154, 199);
   padding: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column justify-content: right;
+  align-items: right
 }
 
 footer ul {
   list-style: none;
 }
 
+.lista-1 {
+  display: flex;
+  /* or inline-flex */
+  flex-direction: column;
+  flex-wrap: nowrap
+    /* background-color: rgb(232,154,199);
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  border-radius: 10px;
+  padding: 20px; */
+}
+
 .lista-uno li {
-  background-color: rgb(151,206,76,0.3);
+  background-color: rgb(151, 206, 76, 0.3);
   margin: 10px;
   padding: 10px;
 }
 
-.lista-dos li {
-  background-color: rgb(240,225,74,0.3);
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-}
 
 /* Aca empiezan los media querie */
 @media (max-width: 480px) {
   header {
     flex-direction: column;
     gap: 10px;
-    background-color:  rgb(232,154,199);
+    background-color: rgb(232, 154, 199);
   }
 
   main {
